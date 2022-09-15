@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>Exercise One</title>
+   <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   <header>
+       <nav>
+          <a href="#boxmodel">Box Model</a>
+          <a href="#flex-box">Flex Box</a>
+          <a href="#positioning-section">Positioning Elements</a>
+          <a href="#heading-section">Heading Usage</a>
+          <a href="#simple-javascript">Simple Javascript</a>
+       </nav>
+   </header>
+   <main></main>
+       <section id="box-model" class="box-model-section section-element">
+           <div class="box-model-interior interior">
+               <h1>CSS Box Model</h1>
+               <h2>/* Padding is inside of the element in CSS */</h2>
+               <p>padding: 40px; (inside)</p>
+               <h2>/* Margin is outside of the element in CSS */</h2>
+               <p>margin: 40px; (outside)</p>
+               <h2>/* Border is added to width and height of element in CSS */</h2>
+               <p>border: 10px solid green;</p>
+           </div>
+       </section>
+       <section id="flex-box" class="flex-box-section section-element">
+           <div class="interior interior-flex">
+            <div class = "interior-flex--top">
+                <div>
+                    <h1>Display: Flex</h1>
+                </div>
+            </div>
+            <div class="interior-flex--horizontal">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class = "interior-flex--vertical">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+           </div>
+       </section>
+       <section id="positioning-section" class="positioning-section section-element">
+           <div class="interior">
+            <div class = "circle circle-one"></div>
+            <div class = "circle" style= "right:48px; top:34px"></div>
+            <div class = "circle" style= "right:186px; bottom:143px"></div>
+            <div class = "square" style= "right:56px; bottom:48px"></div>
+            <div class = "square" style= "right:510px; bottom:204px"></div>
+            <h1>Positioning <br/>Elements</h1>
+           </div>
+       </section>
+       <section id="heading-section" class="heading-section section-element">
+           <div class="heading-section-interior interior">
+               <h1>Proper Heading Usage (h1)</h1>
+               <h2>A heading that describes the content below it (h2)</h2>
+               <h3>Style of the text is not relevant (h3)</h3>
+               <p>Here is a paragraph about why text-size does not affect the order of the headings. We want to consider the hierarchy of the information and not the styling for determining which tag we choose. (p)</p>
+               <h4>This could be another heading about text size (h4)</h4>
+               <p>And you could put another paragraph (or two, or three...) under this further describing this concept. (p)</p>
+           </div>
+       </section>
+       <section id="simple-javascript" class="simple-javascript-section section-element">
+        <script>
+            let counter = 0;
+            function increaseCounterValue(){
+                counter++;
+                const counterDiv=document.querySelector("#counter");
+                counterDiv.innerHTML=counter;
+            }
+        </script>
+        <div class="interior">
+            <h1>Simple Javascript</h1>
+            <div class="counter-button-wrapper">
+            <p id="counter">0</p> 
+            <div id="button">
+                <button onclick="increaseCounterValue()">Click to increase</button>
+            </div>
+        </div>
+        </div>
+       </section>
+   <footer>
+    <h1>Neha Obilisetty - Fall, 2022</h1>
+   </footer>
+</body>
+</html>

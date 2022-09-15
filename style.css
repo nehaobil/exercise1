@@ -1,0 +1,266 @@
+
+* {
+   box-sizing: border-box;
+}
+ 
+body, h1, h2, h3, h4 { 
+   font-family: sans-serif;
+   margin: 0;
+}
+ 
+header {
+   background-color: #85C4FF;
+   padding: 40px;
+}
+ 
+header nav {
+   align-items: center;
+   display: flex;
+   justify-content: flex-end;
+   margin: 0 auto;
+   max-width: 1200px;
+   width: 100%;
+}
+ 
+header nav a {
+   color: #000;
+   font-weight: bold;
+   margin: 0 15px;
+   padding: 5px;
+   text-decoration: none;
+}
+
+header nav a :last-of-type{
+   margin-right: 0;
+}
+
+header nav a :first-of-type{
+   margin-left: 0;
+}
+ 
+section.section-element {
+   margin: 0;
+   padding: 40px; 
+}
+ 
+section.box-model-section {
+   background-color: #CFF1CA;
+}
+ 
+.interior {
+   border: 10px solid #000;
+   margin: 0 auto;
+   max-width: 1200px; 
+   padding: 40px;
+   width: 100%;
+}
+ 
+.interior h1 {
+   color:#000;
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 1.5;
+   margin-bottom: 45px;
+}
+ 
+.interior h2 {
+   color:#000;
+   font-size: 32px;
+   font-weight: 400;
+   line-height: 1;
+}
+ 
+.interior p {
+   color:#000;
+   font-size: 32px;
+   font-weight: bold;
+   line-height: 1;
+}
+ 
+.box-model-interior {
+   background-color: #9EF490;
+   border-color: #187908;
+   min-height: 600px;
+}
+ 
+section.flex-box-section {
+   background-color: #F1D3CA;
+}
+ 
+section.positioning-section {
+   background-color: #CAD7F1;
+}
+ 
+section.heading-section{
+   background-color: #F1CAF0;
+}
+ 
+.heading-section-interior h1, .heading-section-interior h2, .heading-section-interior h3, .heading-section-interior h4 {
+   color: #6C0468;
+}
+
+.heading-section-interior h1 {
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 74px;
+   margin: 0;
+}
+ 
+.heading-section-interior h2 {
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 46px;
+   padding-top: 20px;
+}
+ 
+.heading-section-interior h3 {
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 74px;
+   margin: 0;
+   padding-top: 25px;
+}
+ 
+.heading-section-interior p {
+   color: #3A0F39;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 23px;
+   padding-top: 20px;
+}
+ 
+.heading-section-interior h4 {
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 41px;
+   padding-top: 30px;
+}
+ 
+.heading-section-interior {
+   border: 0;
+   margin: 0;
+   min-height: 600px;
+   width: 100%;
+}
+
+.interior-flex {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.interior-flex > div {
+    background-color: #ff9371;;
+    border: 10px solid #7d260b;
+}
+
+.interior-flex--top {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+    padding: 32px;
+    text-align: center;
+}
+
+.interior-flex--top > div {
+    align-items: center;
+    background-color: #ffece5;
+    border: 5px solid #dd4414;
+    display: flex;
+    height: 170px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 825px;
+    width: 100%;
+}
+
+.interior-flex--top > div > h1 {
+    margin: 0;
+}
+
+.interior-flex--horizontal, .interior-flex--vertical {
+    display: flex;
+    flex-basis: 48%;
+    height: 324px;
+    padding: 20px;
+}
+
+.interior-flex--horizontal > div, .interior-flex--vertical > div {
+    background-color: #ffece5;
+    border: 5px solid #dd4414;
+    flex-basis: 33%;
+    
+}
+
+.interior-flex--horizontal > div {
+    margin-right: 20px;
+} 
+
+.interior-flex--vertical > div {
+    margin-bottom: 20px;
+}
+
+.interior-flex--horizontal > div:last-of-type, .interior-flex--vertical > div:last-of-type {
+    margin-bottom: 0;
+}
+
+.interior-flex--vertical {
+    flex-direction: column;
+}
+
+.positioning-section {
+    background-color: #cad7f1
+}
+
+.positioning-section .interior {
+    background-color: #85c4ff;
+    border-color: #0e3f9e;
+    height: 600px;
+    position: relative;
+}
+
+.circle, .square {
+    background-color: #4480f4;
+    border: 10px solid #0e3f9e;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.circle.circle-one {
+    bottom: 48px;
+    left: 48px;
+}
+
+.simple-javascript-section{
+   background-color: #faefd3;
+}
+
+.simple-javascript-section .interior {
+   border-color: #644904;
+   color: #644904;
+}
+
+.counter-button-wrapper {
+   display: flex;
+   align-content: center;
+}
+
+.counter-button-wrapper p {
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 74px;
+   margin: 0 40px 0 0;
+}
+
+footer {
+   align-items: center;
+   background-color: #ffc3c3;
+   display: flex;
+   height: 108px;
+   padding: 40px;
+}
